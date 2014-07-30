@@ -187,7 +187,7 @@ CMainFrame::CMainFrame()
 	LoadIcons();
 
 
-	gtk_window_set_title (GTK_WINDOW (m_Widget), "PCManX "VERSION );
+	gtk_window_set_title (GTK_WINDOW (m_Widget), "Veck's PCManX "VERSION );
 
 	m_pNotebook = new CNotebook();
 	gtk_notebook_set_scrollable(GTK_NOTEBOOK(m_pNotebook->m_Widget), TRUE);
