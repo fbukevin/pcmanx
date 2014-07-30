@@ -420,8 +420,13 @@ static const char *ui_info =
   "    </menu>"
   "    <menu action='help_menu'>"
   "      <menuitem action='shortcut_list'/>"
-  "      <menuitem action='about'/>"
+  //"      <menuitem action='about'/>"
   "    </menu>"
+// Veck Edit starti
+  "		<menu action='help_menu2'>"
+  "		  <menuitem action='about'/>"
+  "		</menu>"
+// Veck Edit end
   "  </menubar>"
   "  <toolbar>"
   "    <separator/>"
@@ -522,6 +527,7 @@ void CMainFrame::MakeUI()
 		{"all_bot_menu", GTK_STOCK_EXECUTE, _("Bot (All Opened Connections)"), NULL, NULL, NULL},
 	#endif
 		{"help_menu", NULL, _("_Help"), NULL, NULL, NULL},
+		{"help_menu2", NULL, _("_Help"), NULL, NULL, NULL},
 		{"shortcut_list", GTK_STOCK_DIALOG_INFO,  _("_Shortcut List"), NULL, NULL, G_CALLBACK (CMainFrame::OnShortcutList)},
 		{"about", GTK_STOCK_ABOUT, NULL, NULL, _("About"), G_CALLBACK (CMainFrame::OnAbout)},
 		// Ansi Editor Menu
